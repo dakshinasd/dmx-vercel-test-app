@@ -2,7 +2,7 @@ const { default: Link } = require('next/dist/client/link');
 
 const Header = () => {
   return (
-    <div className="bg-slate-600">
+    <div className="bg-skin-nav">
       <Link href="/">
         <a className="p-3 text-white inline-block">Home</a>
       </Link>

@@ -20,7 +20,7 @@ const Product = ({ product, showLink = false }) => {
       <DescriptionField description={product.description} />
       {showLink && (
         <button
-          className="p-2 text-sm text-white bg-green-500 rounded"
+          className="p-2 text-sm text-white bg-skin-fill rounded"
           onClick={() => router.push(`products/${product.id}`)}
         >
           View Details

@@ -7,7 +7,19 @@ module.exports = {
     domains: ['fakestoreapi.com'],
   },
   theme: {
-    extend: {},
+    extend: {
+      textColor: {
+        skin: {
+          base: 'var(--color-text-base)',
+        },
+      },
+      backgroundColor: {
+        skin: {
+          fill: 'var(--color-fill)',
+          nav: 'var(--color-nav-bg)',
+        },
+      },
+    },
   },
   plugins: [],
 };

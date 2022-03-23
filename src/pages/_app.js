@@ -2,6 +2,8 @@ import Header from '../components/Header';
 
 import '../styles/globals.css';
 
+const tenant = 'immensa';
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
