@@ -1,7 +1,6 @@
+import Image from 'next/image';
 import { useRouter } from 'next/router';
 import DescriptionField from '../Product/DescriptionField';
-
-const { default: Image } = require('next/image');
 
 const Product = ({ product, showLink = false }) => {
   const router = useRouter();
@@ -9,7 +8,13 @@ const Product = ({ product, showLink = false }) => {
   return (
     <div className="product-card border border-slate-100 p-3 shadow">
       <div className="w-full h-[100px] flex justify-center">
-        <img src={product.image} className="h-full" />
+        <Image
+          className="h-full"
+          src={product.image}
+          width="100%"
+          height="100%"
+          blurDataURL="data:image/jpeg;base64,/9j/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAAIAAoDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAhEAACAQMDBQAAAAAAAAAAAAABAgMABAUGIWEREiMxUf/EABUBAQEAAAAAAAAAAAAAAAAAAAMF/8QAGhEAAgIDAAAAAAAAAAAAAAAAAAECEgMRkf/aAAwDAQACEQMRAD8AltJagyeH0AthI5xdrLcNM91BF5pX2HaH9bcfaSXWGaRm knyJckliyjqTzSlT54b6bk+h0R//2Q=="
+        />
       </div>
       <h1 className="truncate mt-10 font-bold">{product.title}</h1>
       <DescriptionField description={product.description} />
