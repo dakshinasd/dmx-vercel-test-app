@@ -16,3 +16,9 @@ export const immensaTheme = {
     },
   },
 };
+
+export const baseTheme = {
+  '--color-text-base': '#fff',
+  '--color-fill': '#f26457',
+  '--color-nav-bg': '#f26457',
+};
