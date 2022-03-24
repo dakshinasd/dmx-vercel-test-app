@@ -5,10 +5,9 @@ export const immensaTheme = {
   configuration: {
     path: 'http://hostname/tenant/immensa',
     colors: {
-      primary: 'blue-600',
-      secondary: 'blue-500',
-      mainTextColor: 'gray-500',
-      secondaryTextColor: 'gray-400',
+      '--color-text-base': '#fff',
+      '--color-fill': '#45858c',
+      '--color-nav-bg': '#45858c',
     },
     images: {
       mainLogo: 'images/main-logo.png',
@@ -18,7 +17,11 @@ export const immensaTheme = {
 };
 
 export const baseTheme = {
-  '--color-text-base': '#fff',
-  '--color-fill': '#f26457',
-  '--color-nav-bg': '#f26457',
+  configuration: {
+    colors: {
+      '--color-text-base': '#fff',
+      '--color-fill': '#f26457',
+      '--color-nav-bg': '#f26457',
+    },
+  },
 };

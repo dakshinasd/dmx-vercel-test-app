@@ -1,10 +1,7 @@
 const { default: Link } = require('next/dist/client/link');
 
 const Header = () => {
-  if (process.browser) {
-    const root = document.documentElement;
-    root.style.setProperty('--color-fill', '#cccccc');
-  }
+  
   return (
     <div className="bg-skin-nav">
       <Link href="/">
